@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export const AddCategory = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState();
@@ -18,10 +18,10 @@ export const AddCategory = ({ onNewCategory }) => {
   return (
     <form onSubmit={onSubmit}>
       <input
-        type="text"
+        className="bg-white shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-pink-500"
         value={inputValue}
         onChange={onInputChange}
-        placeholder="Buscar gifs"
+        placeholder="Find GIFs"
       />
     </form>
   );
